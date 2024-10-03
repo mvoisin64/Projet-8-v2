@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// @import './variables.scss';  // Create this if needed
+// @import './mixins.scss';     // Create this if needed
+
+// Import component-specific styles
+@import './components/Header.scss';
+@import './components/Footer.scss';
+// @import './components/MyComponent.scss';
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
