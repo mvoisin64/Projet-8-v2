@@ -1,7 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './img/logo.svg';
 import './App.scss';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import Home from './scenes/Home';  // Scene components
+// import Logement from './scenes/Logement';
+// import APropos from './scenes/APropos';
+// import NotFound from './scenes/NotFound';
 function App() {
   return (
     <div className="App">
@@ -20,6 +24,11 @@ function App() {
         </a>
       </header>
     </div>
+
+    
+     
+
+
   );
 }
 
