@@ -1,2 +1,49 @@
+.logokasa {
+    width: 210.32px;
+    height: 68px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Optional: background color */
+    width: 100%;
+    font-size: 24px;
+    
+  }
+  
+  .logokasa {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    padding: 30px;
+  }
+  
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    li {
+      padding: 30px;
+    }
 
 
+  
+    a {
+      text-decoration: none;
+      color: #333; // Adjust the color as needed
+      font-weight: bold;
+  
+      &:hover {
+        color: #007bff; // Optional: hover color
+      }
+    }
+  }
