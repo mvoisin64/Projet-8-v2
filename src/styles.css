@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.logokasa {
+  width: 210.32px;
+  height: 68px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.scene {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Optional: Add some padding */
+}
+
+@media (max-width: 768px) {
+  .logokasa {
+    width: 100px;
+    height: auto;
+    padding: 30px;
+  }
+}/*# sourceMappingURL=styles.css.map */

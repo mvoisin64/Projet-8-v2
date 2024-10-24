@@ -11,6 +11,12 @@ body {
     opacity: 0px;
 }
 
+.scene {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Optional: Add some padding */
+}
+
 @media (max-width: 768px) {
     .logokasa {
         width: 100px;
@@ -18,3 +24,4 @@ body {
         padding: 30px;
     }
 }
+
