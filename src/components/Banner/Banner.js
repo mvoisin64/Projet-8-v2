@@ -1,7 +1,5 @@
 import React from 'react';
 import './Banner.scss';
-import { Link } from 'react-router-dom';
-
 function Banner({ text, image }) {
   return (
     <div className="banner">

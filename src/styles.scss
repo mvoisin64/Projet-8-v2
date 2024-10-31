@@ -4,6 +4,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+$color-primary: #FF6060;
+
 .logokasa {
     width: 210.32px;
     height: 68px;
@@ -11,17 +13,38 @@ body {
     opacity: 0px;
 }
 
-.scene {
-    max-width: 1200px;
-    margin: 0 auto; /* Center the content */
-    padding: 20px; /* Optional: Add some padding */
-}
-
-@media (max-width: 768px) {
+/* desktop */
+@media (min-width: 1200px) {
+    .scene {
+        max-width: 1920px;
+        width: 100%;
+        margin: 0 auto; 
+    }
+  }
+  
+  /* laptops */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .scene{
+      padding: 0 10px;
+    }
+  }
+  
+  /* tablets */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .scene {
+      padding: 0 15px;
+    }
+ 
+  }
+  
+  /* mobile */
+  @media (max-width: 767px) {
+    .scene {
+      padding: 0 20px;
+    }
     .logokasa {
         width: 100px;
         height: auto;
         padding: 30px;
     }
-}
-
+  }

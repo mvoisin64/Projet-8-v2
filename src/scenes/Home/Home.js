@@ -1,31 +1,29 @@
 import React from 'react';
 import './Home.scss';
-import Header from '../../components/Header/Header.js';  
-import Footer from '../../components/Footer/Footer.js'; 
 import Banner from '../../components/Banner/Banner.js';
 import backgroundhome from '../../img/backgroundhome.png';
+import Thumb from '../../components/Thumb/thumb.js';
+import { useNavigate } from 'react-router-dom';
 
 
 
 function Home() {
+  const navigate = useNavigate();
+  const ThumbClick = (text) => {
+    console.log(`Thumb clicked: ${text}`);
+    navigate('/Logement');
+  };
   return (
     <div className="scene">
-      <Header />
-
-      {/* Banner Image */}
-      <Banner text="Chez vous, partout et ailleurs" image={backgroundhome}/>
-
-
-      {/* Product Details Section (you can fetch and display data here) */}
-      <section className="product-details">
-        <div className="red-square">
-          {/* Placeholder for product details */}
-          <p>Product details coming soon...</p>
-        </div>
-      </section>
-
-      {/* Footer Component */}
-      <Footer />
+      <Banner text="Chez vous, partout et ailleurs" image={backgroundhome} />
+      <div className="thumb-content">
+        <Thumb text="logement 1" onClick={() => {ThumbClick('logement 1'); }} />
+        <Thumb text="logement 2 " onClick={() => ThumbClick('logement 2')} />
+        <Thumb text="logement 3 " onClick={() => ThumbClick('logement 3')} />
+        <Thumb text="logement 4 " onClick={() => ThumbClick('logement 4')} />
+        <Thumb text="logement 5 " onClick={() => ThumbClick('logement 5')} />
+        <Thumb text="logement 6" onClick={() => ThumbClick('logement 6')} />
+      </div>
     </div>
   );
 }

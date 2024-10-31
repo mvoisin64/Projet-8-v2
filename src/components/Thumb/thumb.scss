@@ -1,0 +1,16 @@
+.thumb{
+    border-radius: 10px;
+    background: linear-gradient(to left, #040404, #feb47b); 
+    width: 340px;
+    height: 340px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; 
+    .thumb-text{
+      margin-bottom: 10px;
+      margin-left: 10px; 
+      font-size: 18px;
+      color: white;
+    }
+}
+
