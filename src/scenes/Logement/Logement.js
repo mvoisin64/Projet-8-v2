@@ -12,7 +12,7 @@ function Logement() {
           <img src={Accomodation} alt='Accomodation' />
         </div>
 
-        <div id='middlesection'>
+        {/* <div id='middlesection'>
           <div className='headersLogement'>
             <h1>Cozy loft on the canal Saint-Martin</h1>
             <h2>Paris, Île-de-France, France</h2>
@@ -39,7 +39,7 @@ function Logement() {
           </div>
           <div className='collapseEquipements'></div>
 
-        </div>
+        </div> */}
       </div>
 
     </div>

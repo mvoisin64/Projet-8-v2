@@ -2,15 +2,26 @@ import React from 'react';
 import './thumb.scss';
 
 
-function Thumb({ text, onClick }) {
+function Thumb({ logement, onClick }) {
+  const backgroundImage = logement.cover;
+
+  const thumbStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    width: '100%', // Adjust as needed
+    height: '200px', // Adjust as needed
+  };
+
     return (
-      <div className="thumb" onClick={onClick}>
+      <div className="thumb" onClick={onClick} style={thumbStyle}>
         <div className="thumb-text">
-          <h2>{text}</h2>
+          <h2>{logement.title}</h2>
         </div>
       </div>
     );
   };
   
   export default Thumb;
+  
   

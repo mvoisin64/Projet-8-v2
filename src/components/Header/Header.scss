@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f8f; /* Optional: background color */
     width: 100%;
     font-size: 24px;
     
@@ -27,16 +26,14 @@
     li {
       padding: 30px;
     }
-
-
   
     a {
       text-decoration: none;
       color: #333; // Adjust the color as needed
       font-weight: bold;
-  
-      &:hover {
-        color: #007bff; // Optional: hover color
+    a.active-link {
+        text-decoration:  underline;
       }
+  
     }
   }

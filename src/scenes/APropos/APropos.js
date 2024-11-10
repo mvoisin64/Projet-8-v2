@@ -1,8 +1,14 @@
 import React from 'react';
+import backgroundapropos from '../../img/backgroundapropos.png';
+import Banner from '../../components/Banner/Banner.js';
 function APropos() {
   return (
     <div className='scene'>
-      <h2>404 - Not Found</h2>
+<Banner text="" image={backgroundapropos} />
+<Collapse/>
+<Collapse/>
+<Collapse/>
+<Collapse/>
     </div>
   );
 }

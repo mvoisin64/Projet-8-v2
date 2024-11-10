@@ -5,13 +5,13 @@
     height: 829px;
     box-sizing: border-box;
     border-radius: 25px;
-    padding: 30px;
+    padding: 79px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 50px 50px;
     justify-items: center;
     align-items: center;
-    background-color: aqua;
     margin: 40px auto;
+    overflow: hidden;
 }
