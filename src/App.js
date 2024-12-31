@@ -12,16 +12,16 @@ import './styles.scss';
 function App() {
   return (
     <div className="App">
-      <Header />
-        <Router>
+        <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/APropos" element={<APropos />} />
         <Route path="/Logement" element={<Logement/>} />
         <Route path="*" element={<NotFound />} /> {/* Catch-all for undefined routes */}
       </Routes>
-    </Router>
-    <Footer />
+      <Footer />
+
+
     </div>
 
     

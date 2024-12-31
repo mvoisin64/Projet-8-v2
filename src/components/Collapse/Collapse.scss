@@ -1,3 +1,5 @@
+@use '../../styles.scss' as *;
+
 .collapse {
     display: flex;
     background-color: $color-primary;

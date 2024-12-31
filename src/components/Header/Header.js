@@ -1,6 +1,8 @@
 import React from 'react';
-import './Header.scss'; 
-import logo from '../../img/LOGOkasa.png'; 
+import './Header.scss';
+import logo from '../../img/LOGOkasa.png';
+import { NavLink } from 'react-router-dom';
+
 
 const Header = () => {
     return (
@@ -9,14 +11,20 @@ const Header = () => {
             <nav>
                 <ul>
                     <li>
-        
-                            Accueil
-                    
-                        </li>
-                    <li>
+                        <NavLink to="/"
+              className={({ isActive }) => (isActive ? 'disabled' : '')}>
 
-                            A propos
-                    
+                            
+                        Accueil
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/APropos"
+              className={({ isActive }) => (isActive ? 'disabled' : '')}>
+                        A propos
+                        </NavLink>
+
+                        
                     </li>
                 </ul>
             </nav>
