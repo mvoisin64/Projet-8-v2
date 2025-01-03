@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Collapse.scss';
 import ArrowBack from '../../img/arrow_back.svg';
-const Collapse = ({ title, ArrowBack, children }) => {
+const Collapse = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleCollapse = () => {

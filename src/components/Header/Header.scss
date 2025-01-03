@@ -1,45 +1,42 @@
-
-
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 24px;
+
+}
+
+.logokasa {
+  width: 100px;
+  /* Adjust the size as needed */
+  height: auto;
+  padding: 30px;
+}
+
+nav {
+  ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    font-size: 24px;
-    
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-  
-  .logokasa {
-    width: 100px; /* Adjust the size as needed */
-    height: auto;
+
+  li {
     padding: 30px;
   }
-  
-  nav {
-    ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-  
-    li {
-      padding: 30px;
-    }
-    a{
-      color: black;
-    }
-  
 
-  .active-link {
-        text-decoration:  underline;
+  a {
+    color: black;
+    &.active-link {
+      text-decoration: underline;
 
-      }
 
-      &.disabled {
-        text-decoration: none;
-        pointer-events: none; // Désactive le clic
-        cursor: default;
-  
+
+    }
+    &.inactive-link {
+      text-decoration: none;
+
     }
   }
+}
