@@ -1,1 +1,31 @@
 @use '../../styles.scss' as *;
+
+.error404{
+font-size: 288px;
+font-weight: 700;
+}
+
+.Oups{
+font-size: 36px;
+font-weight: 500;
+line-height: 51.34px;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: $color-primary;
+margin-bottom: 168px;
+
+}
+
+.retourner{
+    display: block;
+    color: black;
+font-size: 18px;
+font-weight: 500;
+line-height: 25.67px;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin-bottom: 50px;
+
+}

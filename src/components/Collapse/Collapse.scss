@@ -1,50 +1,76 @@
 @use '../../styles.scss' as *;
 
 .collapse {
-    display: flex;
-    background-color: $color-primary;
-    align-items: center;
-    justify-content: space-between;
-    width: 582px;
-    border-radius: 5px;
-    padding: 5px;
-}
 
-.collapse__button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
+    .collapse-part1 {
+        display: flex;
+        background-color: $color-primary;
+        align-items: center;
+        justify-content: space-between;
+        width: 1023px;
+        height: 52px;
+        border-radius: 5px;
+        padding: 5px;
+        position: relative;
+    }
 
-.collapse__arrow {
-    transition: transform 0.3s ease;
-}
+    .title {
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 142.6%;
+        // line-height: 34.22px;
+        text-align: left;
+    }
 
-.collapse__arrow.rotate {
-    transform: rotate(180deg);
-}
+    .collapse__button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center; // Centrer l'image verticalement
+        justify-content: center;
+    }
 
-.collapse__content {
-    color: #000;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 142.6%; /* 17.112px */
-}
+    .collapse__arrow {
+        transition: transform 0.3s ease;
+        transform-origin: center;
+        display: block;
+        position: absolute;
+        right: 15px;
 
-.title{
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 142.6%;
-    /* 25.668px */
-}
+        &.rotate {
+            transform: rotate(180deg);
+        }
 
-.ArrowBack {
-    width: 32px;
-    height: 32px;
-    transform: rotate(0deg);
-    flex-shrink: 0;
+    }
+
+    .collapse__content {
+        width: 1032px;
+        height: auto;
+        display: flex;
+        border-radius: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        color: #000;
+        background-color: #F6F6F673;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 142.6%;
+        margin-top: -3px;
+        padding: 10px 0;
+
+
+    }
+
+    .collapse__content > div {
+        padding: 10px; 
+        margin-top: 5px;
+        text-align: left;
+
+    }
 }

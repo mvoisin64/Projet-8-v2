@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   font-size: 24px;
-
+  font-weight: 500;
 }
 
 .logokasa {
@@ -28,6 +28,9 @@ nav {
 
   a {
     color: black;
+
+
+
     &.active-link {
       text-decoration: underline;
 

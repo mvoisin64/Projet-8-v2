@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './Collapse.scss';
 import ArrowBack from '../../img/arrow_back.svg';
+
+
 const Collapse = ({ title, children }) => {
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleCollapse = () => {
@@ -10,6 +13,9 @@ const Collapse = ({ title, children }) => {
 
     return (
         <div className="collapse">
+
+            <div className='collapse-part1'>
+
             <h2 className='title'>{title}</h2>
             <button className="collapse__button" onClick={toggleCollapse}>
             <img 
@@ -18,8 +24,11 @@ const Collapse = ({ title, children }) => {
                     className={`collapse__arrow ${isOpen ? 'rotate' : ''}`} 
                 />
             </button>
+            
+            </div>
 
             {isOpen && <div className="collapse__content">{children}</div>}
+
         </div>
     );
 };
