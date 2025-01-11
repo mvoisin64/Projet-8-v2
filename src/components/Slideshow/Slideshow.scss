@@ -1,0 +1,30 @@
+@use '../../styles.scss' as *;
+
+.imagecontainer {
+    position: relative;
+
+    .imageLogement {
+        width: 1240px;
+        height: 415px;
+        border-radius: 25px;
+    }
+
+    .arrowcarousel {
+        width: 32px;
+        height: 32px;
+        transform: rotate(0deg);
+        flex-shrink: 0;
+        position: absolute;
+    }
+    
+    .arrowcarousel-1 {
+left: 30px
+    }
+
+    .arrowcarousel-2 {
+right: 30px
+    }
+
+
+
+}
