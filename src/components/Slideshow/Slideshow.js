@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
-import logement from '../../data/logement.json'; // Importer le fichier JSON
 import './Slideshow.scss'
-import Logementexemple from '../../img/accomodationFicheLogement.png'
 import Arrowcarousel from '../../img/Arrowcarousel.png'
 
 
-const Slideshow = ({ id }) => {
-    console.log(id)
+const Slideshow = ({pictures}) => {
     return (
         <div className='slideshow'>
             <div className='slideshow-conteneur'>
 
-                <img src={Logementexemple}
+                <img src={logement.pictures[0]}
                     alt="Logementexemple"
                     className='logementpic' />
 

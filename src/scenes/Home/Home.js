@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.scss';
 import Banner from '../../components/Banner/Banner.js';
-import backgroundhome from '../../img/backgroundhome.png';
+import backgroundhome from './../../img/backgroundhome.png';
 import Thumb from '../../components/Thumb/thumb.js';
 import { useNavigate } from 'react-router-dom';
 import logement from '../../data/logement.json';
@@ -12,7 +12,7 @@ function Home() {
   console.log(logement);
   const ThumbClick = (logement) => {
     console.log(`Thumb clicked: ${logement}`);
-    navigate('/Logement');
+    navigate('/Logement/'+ logement );
   };
   return (
     <div className="scene">
