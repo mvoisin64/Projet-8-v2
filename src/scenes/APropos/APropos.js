@@ -1,7 +1,7 @@
 import React from 'react';
 import backgroundapropos from '../../img/backgroundapropos.png';
 import Banner from '../../components/Banner/Banner.js';
-import Collapse from '../../components/Collapse/Collapse.js'
+import Collapse from '../../components/Collapse/Collapse.js';
 import './APropos.scss';
 
 function APropos() {
