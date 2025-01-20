@@ -8,7 +8,7 @@ const Slideshow = ({pictures}) => {
         <div className='slideshow'>
             <div className='slideshow-conteneur'>
 
-                <img src={logement.pictures[0]}
+                <img src={pictures[1]}
                     alt="Logementexemple"
                     className='logementpic' />
 
