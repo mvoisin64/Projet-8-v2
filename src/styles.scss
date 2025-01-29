@@ -1,50 +1,201 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 $color-primary: #FF6060;
 
 .logokasa {
-    width: 210.32px;
-    height: 68px;
-    gap: 0px;
-    opacity: 0px;
+  width: 210.32px;
+  height: 68px;
+  gap: 0px;
+  opacity: 0px;
 }
 
 /* desktop */
 @media (min-width: 1200px) {
-    .scene {
-        max-width: 1920px;
-        width: 100%;
-        margin: 0 auto; 
+  .scene {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .scene {
+    padding: 0 10px;
+  }
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .scene {
+    padding: 0 15px;
+  }
+
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .scene {
+    padding: 0 20px;
+  }
+
+  .logokasa {
+    width: 100px;
+    height: auto;
+    padding: 30px;
+  }
+
+  .header {
+    margin: -10px;
+  nav {
+    li {
+      font-size: 12px;
+      padding: 11px;
     }
   }
+}
+  .banner {
+    width: 352px;
+    height: 111px;
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0.6px;
+
+    .banner-text {
+      font-size: 10px;
+    }
+
+
+  }
+
+  .thumb-content {
+    width: 350px;
+        gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0.6px;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    padding: 20px 0 ;
+    overflow: auto;
+
+  }
+
+  .thumb{
+    margin: 20px
+  }
+
+  // A PROPOS
+
+  .collapse {
+
+    .title{
+      font-size: 14px;
+    }
   
-  /* laptops */
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .scene{
-      padding: 0 10px;
-    }
-  }
+  .collapse-part1 {
+    width: 330px;
+    height: 30px;
+
   
-  /* tablets */
-  @media (min-width: 768px) and (max-width: 991px) {
-    .scene {
-      padding: 0 15px;
     }
- 
-  }
-  
-  /* mobile */
-  @media (max-width: 767px) {
-    .scene {
-      padding: 0 20px;
-    }
-    .logokasa {
-        width: 100px;
-        height: auto;
-        padding: 30px;
+    .collapse__content{
+      width: 338px;
+      div {
+        font-size: 12px;
+      }
+     
+      
     }
   }
+
+// 404
+
+.error404 {
+  font-size: 96px;
+}
+
+.oups{
+  font-size: 20px;
+}
+
+.retourner{
+  font-size: 12px;
+}
+
+// LOGEMENT
+.slideshow-conteneur {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+
+.arrowcarousel{
+  width: 13px;
+  height: 24px;
+}
+
+.arrowcarousel-1 {
+  left: 23px;
+  top: 115px;}
+
+  .arrowcarousel-2 {
+    right: 23px;
+    top: 115px;}
+
+.logementpic{
+width: 335px;
+height: 255px;
+object-fit: cover;
+}
+
+.maintitle{
+  font-size: 25px;
+
+}
+
+.location {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.tag {
+  font-weight: 700;
+  font-size: 12px;
+  color: white;
+  width: auto;
+  height: auto;
+  background-color: #FF6060;
+  border-radius: 10px;
+  padding: 1px 7px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+  // FOOTER
+
+  .footer {
+    width: 390px;
+    height: 126px;
+    gap: 0px;
+    opacity: 0px;
+    
+
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      text-align: center;
+      text-decoration-skip-ink: none;
+
+    }
+
+  }
+
+
+}

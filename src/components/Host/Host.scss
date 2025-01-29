@@ -1,0 +1,36 @@
+@use '../../styles.scss' as *;
+
+.host {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-self: end;
+    
+}
+
+.host_picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.host_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+
+    .host_first-name,
+    .host_last-name {
+        color: $color-primary;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+
+}

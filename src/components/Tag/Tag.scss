@@ -1,0 +1,13 @@
+@use '../../styles.scss' as *;
+.tag{
+font-weight: 700;
+font-size: 14px;
+color: white;
+width: auto;
+height: auto;
+background-color: $color-primary;
+border-radius: 10px;
+padding: 6px 27px;
+white-space: nowrap;
+overflow: hidden;
+}
