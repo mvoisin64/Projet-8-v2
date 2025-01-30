@@ -1,17 +1,23 @@
 @use '../../styles.scss' as *;
 
+
+.collapseapropos{
+    width: 1023px;
+}
+
 .collapse{ 
     .collapse-part1 {
         display: flex;
         background-color: $color-primary;
         align-items: center;
         justify-content: space-between;
-        width: 1023px;
         height: 52px;
         border-radius: 5px;
         padding: 5px;
         position: relative;
     }
+
+  
 
     .title {
         color: #FFF;
@@ -46,7 +52,6 @@
     }
 
     .collapse__content {
-        width: 1032px;
         height: auto;
         display: flex;
         border-radius: 5px;

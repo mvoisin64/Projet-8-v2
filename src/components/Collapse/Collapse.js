@@ -3,7 +3,7 @@ import './Collapse.scss';
 import ArrowBack from '../../img/arrow_back.svg';
 
 
-const Collapse = ({ title, children }) => {
+const Collapse = ({ title, className, children }) => {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -12,7 +12,7 @@ const Collapse = ({ title, children }) => {
     };
 
     return (
-        <div className="collapse">
+        <div className={className}>
 
             <div className='collapse-part1'>
 

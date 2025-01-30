@@ -5,8 +5,8 @@ const Rating = ({ rating }) => {
 
     return (
         <div className='rating'>
-
-            {/* <div className='stars-container'>
+{/* 
+            <div className='stars-container'>
                 {stars.map((_, index) => (
                     { (index < rating) ? <i className="fa-solid fa-star star"> </i> : <i className="fa-solid fa-star star"> </i>
 }
@@ -15,8 +15,14 @@ const Rating = ({ rating }) => {
 
 
             ))}
-            </div> */}
-            
+            </div>
+             */}
+<i className="fa-solid fa-star star"> </i>
+<i className="fa-solid fa-star star"> </i>
+<i className="fa-solid fa-star star"> </i>
+<i className="fa-solid fa-star star"> </i>
+<i className="fa-solid fa-star star"> </i>
+
             { /* IDEM LIGNE 10 for(let i =0; i<stars.length; i++) */}
 
         </div>

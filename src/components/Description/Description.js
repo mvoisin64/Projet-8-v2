@@ -12,22 +12,24 @@ const Description = ({ descriptionlogement }) => {
 
     return (
         <div className="description">
-            {/* <div className='descriptionpart1'> */}
+
             <Title className="item-title" title={descriptionlogement.title} location={descriptionlogement.location} />
-            <Host className="item-host" name={descriptionlogement.host.name} picture={descriptionlogement.host.picture} />
             <div className='tag-container'>
                 {descriptionlogement.tags.map((tag) => {
 
                     return <Tag text={tag} />
                 })}
             </div>
+            <div className='host_rating_container'>
             <Rating rating={descriptionlogement.rating} className="item-rating" />
+            <Host className="item-host" name={descriptionlogement.host.name} picture={descriptionlogement.host.picture} />
             
+            </div>
 
-            <Collapse className="item-collapse-1" title={"Description"}>
+            <Collapse className="collapse item-collapse-1" title={"Description"}>
                 <div>{descriptionlogement.description}</div>
             </Collapse>
-            <Collapse className="item-collapse-2" title={"Équipements"} >
+            <Collapse className="collapse item-collapse-2" title={"Équipements"} >
                 <div>
                     {descriptionlogement.equipments.map((equipement) => {
 
@@ -35,8 +37,8 @@ const Description = ({ descriptionlogement }) => {
                     })}
                 </div>
             </Collapse>
-            </div>
-        // </div>
+        </div>
+
     );
 };
 

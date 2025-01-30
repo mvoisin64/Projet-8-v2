@@ -2,7 +2,22 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  margin: 0;
 }
+
+
+#root, .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+
+main {
+  flex: 1; // Permet au contenu principal de s'étendre
+}
+
 
 $color-primary: #FF6060;
 
@@ -129,6 +144,18 @@ $color-primary: #FF6060;
 }
 
 // LOGEMENT
+.description {
+  display: flex
+  ;
+          flex-direction: column;
+
+  gap: 10px;
+  width: 1240px;
+  margin: auto;
+  max-width: 100%;
+  margin-bottom: 40px;
+
+}
 .slideshow-conteneur {
   width: auto;
   padding: 0;
@@ -178,6 +205,14 @@ object-fit: cover;
   white-space: nowrap;
   overflow: hidden;
 }
+
+.host_rating_container{
+  display: flex;
+  justify-content:space-between;
+}
+
+
+
   // FOOTER
 
   .footer {

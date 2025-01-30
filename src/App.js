@@ -13,12 +13,14 @@ function App() {
   return (
     <div className="App">
         <Header />
+        <main>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/APropos" element={<APropos />} />
         <Route path="/Logement/:id" element={<Logement/>} />
         <Route path="*" element={<NotFound />} /> {/* Catch-all for undefined routes */}
       </Routes>
+      </main>
       <Footer />
 
 
