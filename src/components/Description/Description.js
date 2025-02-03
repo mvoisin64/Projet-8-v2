@@ -17,7 +17,7 @@ const Description = ({ descriptionlogement }) => {
             <div className='tag-container'>
                 {descriptionlogement.tags.map((tag) => {
 
-                    return <Tag text={tag} />
+                    return <Tag key={tag.id} text={tag} />
                 })}
             </div>
             <div className='host_rating_container'>
@@ -33,7 +33,7 @@ const Description = ({ descriptionlogement }) => {
                 <div>
                     {descriptionlogement.equipments.map((equipement) => {
 
-                        return <div>{equipement}</div>
+                        return <div key={equipement.id} > {equipement}</div>
                     })}
                 </div>
             </Collapse>

@@ -1,11 +1,10 @@
 @use '../../styles.scss' as *;
 
 .thumb-content {
-    width: 1240px;
-    height: 829px;
+    width: 100%;
     box-sizing: border-box;
     border-radius: 25px;
-    padding: 79px;
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);

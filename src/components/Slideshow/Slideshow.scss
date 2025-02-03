@@ -1,7 +1,7 @@
 @use '../../styles.scss' as *;
 
 .logementpic {
-    width: 1240px;
+    width: 100%;
     height: 415px;
     border-radius: 25px;
     object-fit: cover;
@@ -9,7 +9,7 @@
 }
 
 .slideshow-conteneur {
-    width: 1240px;
+    width: 100%;
     height: 415px;
     border-radius: 25px;
     margin: auto;

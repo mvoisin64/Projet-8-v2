@@ -31,7 +31,7 @@ $color-primary: #FF6060;
 /* desktop */
 @media (min-width: 1200px) {
   .scene {
-    max-width: 1920px;
+    max-width: 1253px;
     width: 100%;
     margin: 0 auto;
   }
@@ -45,9 +45,13 @@ $color-primary: #FF6060;
 }
 
 /* tablets */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .scene {
     padding: 0 15px;
+  }
+
+  .collapseapropos{
+    width: 100%;
   }
 
 }
@@ -124,9 +128,15 @@ $color-primary: #FF6060;
       div {
         font-size: 12px;
       }
+
+     
      
       
     }
+  }
+
+  .collapseapropos{
+    width: initial;
   }
 
 // 404
@@ -145,10 +155,8 @@ $color-primary: #FF6060;
 
 // LOGEMENT
 .description {
-  display: flex
-  ;
-          flex-direction: column;
-
+  display: flex;
+ flex-direction: column;
   gap: 10px;
   width: 1240px;
   margin: auto;
@@ -177,13 +185,25 @@ $color-primary: #FF6060;
     top: 115px;}
 
 .logementpic{
-width: 335px;
 height: 255px;
 object-fit: cover;
+width: 100%;
+}
+
+.title{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+  
 }
 
 .maintitle{
   font-size: 25px;
+  line-height: 1.5; // Réduit l’espace entre les lignes
+
 
 }
 
@@ -207,8 +227,10 @@ object-fit: cover;
 }
 
 .host_rating_container{
-  display: flex;
+  flex-direction: row;
   justify-content:space-between;
+  display: flex;
+  align-items: center;
 }
 
 

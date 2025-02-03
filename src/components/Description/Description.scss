@@ -28,15 +28,13 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        padding-bottom: 23px;
         // position: absolute;
         // right: 19px;
         // top: 8px;
     }
 
-    // .host_rating_container {
-    //     // display: flex;
-    //     // position: relative;
-    // }
+  
 
     .tag-container {
         grid-area: tags;
@@ -47,7 +45,6 @@
 
     .rating {
         grid-area: rating;
-        align-self: center;
         // position: absolute;
         // left: 440px;
         // bottom: 30px;
@@ -63,4 +60,10 @@
         width: 100%;
     }
 
+}
+
+.host_rating_container {
+    display: flex;
+ flex-direction: column-reverse;
+ align-items: flex-end;
 }

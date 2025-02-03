@@ -23,7 +23,7 @@ function Logement() {
   return (
     <div className='scene'>
       <Slideshow pictures={logement.pictures} />
-      <Description descriptionlogement={logement} />
+      <Description key={logement.id} descriptionlogement={logement} />
 
 
 

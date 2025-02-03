@@ -10,7 +10,6 @@ function Thumb({ logement, onClick }) {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     width: '100%', // Adjust as needed
-    height: '200px', // Adjust as needed
   };
 
     return (
