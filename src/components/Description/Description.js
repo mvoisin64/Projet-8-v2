@@ -16,8 +16,8 @@ const Description = ({ descriptionlogement }) => {
             <Title className="item-title" title={descriptionlogement.title} location={descriptionlogement.location} />
             <div className='tag-container'>
                 {descriptionlogement.tags.map((tag) => {
-
-                    return <Tag key={tag.id} text={tag} />
+ 
+                    return <Tag key={tag} text={tag} />
                 })}
             </div>
             <div className='host_rating_container'>
@@ -33,7 +33,7 @@ const Description = ({ descriptionlogement }) => {
                 <div>
                     {descriptionlogement.equipments.map((equipement) => {
 
-                        return <div key={equipement.id} > {equipement}</div>
+                        return <div key={equipement} > {equipement}</div>
                     })}
                 </div>
             </Collapse>

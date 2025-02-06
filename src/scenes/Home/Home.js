@@ -11,9 +11,9 @@ function Home() {
   
   const navigate = useNavigate();
 
-  const ThumbClick = (logement) => {
-    console.log(`Thumb clicked: ${logement}`);
-    navigate('/Logement/'+ logement );
+  const ThumbClick = (id) => {
+    console.log(`Thumb clicked: ${id}`);
+    navigate('/Logement/'+ id );
   };
   return (
     <div className="scene">
