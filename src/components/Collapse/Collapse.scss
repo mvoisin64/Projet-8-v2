@@ -52,7 +52,9 @@
     }
 
     .collapse__content {
-        height: auto;
+        transition: all 0.3s ease-in-out;
+        overflow: auto;
+        height: 0;
         display: flex;
         border-radius: 5px;
         flex-direction: column;
@@ -64,10 +66,13 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 142.6%;
         margin-top: -3px;
         padding: 10px 0;
 
+
+    }
+    .collapse__open{
+height: 150px;
 
     }
     .collapse__content > div {

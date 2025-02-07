@@ -11,9 +11,6 @@ const Rating = ({ rating }) => {
                     (index < rating) ? <i key={index} className=" fullstar fa-solid fa-star"> </i> : <i key={index} className="fa-solid fa-star star"> </i>
 
 
-
-
-
             ))}
 
             </div>
